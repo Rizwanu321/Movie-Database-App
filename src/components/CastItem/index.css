@@ -1,0 +1,73 @@
+.cast-item {
+  width: 150px;
+  text-align: center;
+  list-style-type: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cast-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cast-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cast-image {
+  transform: scale(1.05);
+}
+
+.cast-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+.cast-character {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .cast-item {
+    width: 140px;
+  }
+
+  .cast-image {
+    width: 100px;
+  }
+
+  .cast-name {
+    font-size: 1rem;
+  }
+
+  .cast-character {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cast-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .cast-name {
+    font-size: 0.9rem;
+  }
+
+  .cast-character {
+    font-size: 0.8rem;
+  }
+}
